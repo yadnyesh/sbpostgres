@@ -36,6 +36,7 @@ public class WebController {
 
         for(Customer customer : repository.findAll()){
             customers.add(customer);
+            customers.toArray();
         }
         return customers;
     }
